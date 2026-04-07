@@ -52,7 +52,7 @@ function Send-AlertEmail {
     }
 }
 
-# Main logic: check the website status and send an alert if down
+# Main logic, check the website status and send an alert if down
 if (Test-WebsiteStatus -url $websiteUrl) {
     Write-Output "$websiteUrl is UP!"
 } else {
